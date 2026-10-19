@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal Atelier — Official Store (Shopify Dawn WooCommerce Twin)</title>
+  <link rel="stylesheet" href="../assets/css/dawn-theme.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #121212;
+      -webkit-font-smoothing: antialiased;
+    }
+    .announcement-bar {
+      background: #121212;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 13px;
+      letter-spacing: 0.4px;
+    }
+    .header-nav {
+      max-width: 1340px;
+      margin: 0 auto;
+      padding: 24px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .brand-title {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .dawn-badge {
+      font-size: 10px;
+      background: #008060; /* Shopify Green */
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .header-menu {
+      display: flex;
+      gap: 28px;
+      font-size: 15px;
+      color: #121212;
+    }
+    .cart-bubble-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      color: #121212;
+    }
+    .product-grid {
+      max-width: 1240px;
+      margin: 48px auto;
+      padding: 0 32px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 56px;
+    }
+    .gallery-container {
+      background: #f7f7f7;
+      border-radius: 4px;
+      height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 110px;
+      position: relative;
+    }
+    .product-meta h1 {
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: -0.5px;
+      margin: 0 0 16px 0;
+      line-height: 1.25;
+    }
+    .product-price-row {
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .variant-group {
+      margin-bottom: 24px;
+    }
+    .variant-label {
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      display: block;
+      color: #707070;
+    }
+    .dawn-add-to-cart {
+      width: 100%;
+      background: #ffffff;
+      color: #121212;
+      border: 1px solid #121212;
+      padding: 16px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-bottom: 12px;
+      transition: all 0.2s;
+    }
+    .dawn-add-to-cart:hover {
+      background: #121212;
+      color: #ffffff;
+    }
+    .dawn-buy-now {
+      width: 100%;
+      background: #121212;
+      color: #ffffff;
+      border: 1px solid #121212;
+      padding: 16px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .product-description-text {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e5e5;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #424242;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    window.dawnConfig = {
+      ajaxUrl: '/wp-admin/admin-ajax.php',
+      cartNonce: 'dawn_test_nonce'
+    };
+  </script>
+  <script src="../assets/js/dawn-theme.js"></script>
+</head>
+<body>
+  <div class="announcement-bar">
+    Welcome to our store &bull; Free express delivery on orders over $100
+  </div>
+
+  <header class="header-nav">
+    <div class="brand-title">
+      <span>ATELIER DAWN</span>
+      <span class="dawn-badge">SHOPIFY UX &bull; WOO BACKEND</span>
+    </div>
+
+    <nav class="header-menu">
+      <span>Apparel</span>
+      <span>Footwear</span>
+      <span>Accessories</span>
+      <span>About</span>
+    </nav>
+
+    <div>
+      <button type="button" class="cart-bubble-btn dawn-cart-trigger" id="cart-icon-bubble">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4H18L16.5 13H5.5L4 4ZM4 4L3 1H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="17" r="1.5" fill="currentColor"/><circle cx="15" cy="17" r="1.5" fill="currentColor"/></svg>
+        <span class="dawn-cart-count-bubble" style="background: #121212; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 999px;">1</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="product-grid">
+    <div class="gallery-container">
+      <div>🧥</div>
+      <div style="position: absolute; bottom: 20px; left: 20px; font-size: 12px; color: #707070;">
+        Image 1 of 4 &bull; Tailored Cut
+      </div>
+    </div>
+
+    <div class="product-meta">
+      <span style="font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #707070; margin-bottom: 8px; display: block;">ATELIER EDITIONS</span>
+      <h1>Heavyweight Organic Cotton Overcoat</h1>
+      
+      <div class="product-price-row">
+        <span>$240.00 USD</span>
+        <span style="font-size: 12px; color: #008060; font-weight: 500;">In stock, ready to ship</span>
+      </div>
+
+      <div class="variant-group dawn-variant-wrapper">
+        <span class="variant-label">Color: Charcoal</span>
+        <div class="dawn-pills-container">
+          <div class="dawn-pill selected" data-value="charcoal">Charcoal</div>
+          <div class="dawn-pill" data-value="camel">Camel</div>
+          <div class="dawn-pill" data-value="olive">Dark Olive</div>
+        </div>
+      </div>
+
+      <div class="variant-group dawn-variant-wrapper">
+        <span class="variant-label">Size</span>
+        <div class="dawn-pills-container">
+          <div class="dawn-pill" data-value="s">Small</div>
+          <div class="dawn-pill selected" data-value="m">Medium</div>
+          <div class="dawn-pill" data-value="l">Large</div>
+          <div class="dawn-pill" data-value="xl">Extra Large</div>
+        </div>
+      </div>
+
+      <button type="button" class="dawn-add-to-cart dawn-cart-trigger" id="demo-atc">
+        Add to cart
+      </button>
+      <button type="button" class="dawn-buy-now">
+        Buy it now
+      </button>
+
+      <div class="product-description-text">
+        Crafted from 100% Japanese heavy organic cotton canvas with bespoke horn buttons and interior piped seams. An unstructured silhouette designed for effortless transitional layering.
+      </div>
+    </div>
+  </main>
+
+  <!-- Slide-out Cart Drawer -->
+  <div id="dawn-drawer-backdrop" class="dawn-drawer-backdrop"></div>
+  <aside id="dawn-cart-drawer" class="dawn-cart-drawer">
+    <div class="dawn-drawer-header">
+      <h2>Your cart (1)</h2>
+      <button type="button" class="dawn-drawer-close-btn">&times;</button>
+    </div>
+
+    <div class="dawn-free-shipping-bar">
+      <p class="dawn-free-shipping-msg">
+        🎉 You are eligible for free shipping!
+      </p>
+      <div class="dawn-progress-track"><div class="dawn-progress-bar" style="width: 100%;"></div></div>
+    </div>
+
+    <div class="dawn-drawer-items">
+      <div class="widget_shopping_cart_content">
+        <div style="display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid #e5e5e5; align-items: center;">
+          <div style="width: 72px; height: 72px; background: #f7f7f7; display: flex; align-items: center; justify-content: center; font-size: 36px; border-radius: 4px;">
+            🧥
+          </div>
+          <div style="flex: 1;">
+            <strong style="display: block; font-size: 14px; font-weight: 500; color: #121212;">Heavyweight Organic Cotton Overcoat</strong>
+            <span style="font-size: 12px; color: #707070; display: block; margin: 2px 0 6px 0;">Charcoal / Medium</span>
+            <span style="font-weight: 500; font-size: 14px; color: #121212;">$240.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dawn-drawer-footer">
+      <div class="dawn-subtotal-row">
+        <span>Estimated total</span>
+        <span class="dawn-subtotal-amount">$240.00 USD</span>
+      </div>
+      <p class="dawn-tax-notice">
+        Taxes, discounts and shipping calculated at checkout.
+      </p>
+      <a href="#" class="dawn-btn-checkout">
+        Check out &bull; $240.00 USD
+      </a>
+    </div>
+  </aside>
+</body>
+</html>
+
