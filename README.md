@@ -20,7 +20,7 @@ Developed and maintained by **[Harun Sekmen](https://github.com/harunsekmen)**.
 > - **Self-Hosted Cost Freedom**: Connect your direct Stripe/PayPal accounts with zero intermediary cuts.
 > - **Dedicated Custom Build**: Complete turnkey setup and deployment within 7 business days.
 > 
-> 📩 **Book a Migration Consultation**: [Hire Harun on Upwork](https://www.upwork.com/freelancers/~01a7a8b58043e6e6d9) | Direct Email: `sekhar38@gmail.com`
+> 📩 **Book a Migration Consultation**: [Hire Harun on Upwork](https://www.upwork.com/freelancers/~01a7a8b58043e6e6d9) | Direct Email: `sekmenwp@gmail.com`
 
 ---
 
