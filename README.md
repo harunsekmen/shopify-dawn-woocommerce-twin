@@ -1,135 +1,86 @@
-# 🛍️ DawnTwin: Shopify-Style WooCommerce Engine (Zero Fees)
+# 🛍️ DawnTwin · Shopify-Style WooCommerce Storefront Engine
 
-[![WooCommerce HPOS Compatible](https://img.shields.io/badge/WooCommerce-HPOS%20Ready-7f54b3.svg)](https://github.com/harunsekmen/shopify-dawn-woocommerce-twin)
-[![Platform Fees](https://img.shields.io/badge/Shopify%20Fees-0%25%20Commission-brightgreen.svg)](https://github.com/harunsekmen/shopify-dawn-woocommerce-twin)
+[![WooCommerce HPOS Ready](https://img.shields.io/badge/WooCommerce-HPOS%20Ready-7f54b3.svg)](https://github.com/harunsekmen/shopify-dawn-woocommerce-twin)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://github.com/harunsekmen/shopify-dawn-woocommerce-twin/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)](https://github.com/harunsekmen/shopify-dawn-woocommerce-twin/actions)
+[![Zero Platform Fees](https://img.shields.io/badge/Platform%20Fees-0%25-brightgreen.svg)](https://github.com/harunsekmen/shopify-dawn-woocommerce-twin)
 
-> A pixel-perfect reproduction of Shopify's modern Dawn design system and cart UX built natively on top of self-hosted WooCommerce. Zero monthly subscriptions, 0% platform transaction penalties, and 100% data ownership.
+> A clean reproduction of Shopify's modern Dawn theme user experience built natively on WooCommerce. Delivers a clean product page layout, swatch variant pills, and a slide-out cart drawer with complete data ownership.
 
-Developed and maintained by **[Harun Sekmen](https://github.com/harunsekmen)**.
+Developed and maintained by **[Harun Sekmen](https://github.com/harunsekmen)** — E-Commerce Systems Engineer & WooCommerce Developer.
 
----
-
-## 🚀 Migrating from Shopify or Launching a Zero-Fee Store?
-> ### **Turnkey Shopify-to-WooCommerce Migration by Harun Sekmen**
-> 
-> If you love Shopify's slick user experience but are tired of paying $39 - $399/month plus +2.0% transaction fee penalties and expensive app subscriptions:
-> - **Full Catalog & Customer Migration**: Seamless transfer of products, variants, customer databases, and historical orders.
-> - **Pixel-Perfect Dawn Replication**: Identical slide-out drawer cart, variant pills, and clean typography.
-> - **Self-Hosted Cost Freedom**: Connect your direct Stripe/PayPal accounts with zero intermediary cuts.
-> - **Dedicated Custom Build**: Complete turnkey setup and deployment within 7 business days.
-> 
-> 📩 **Book a Migration Consultation**: [Hire Harun on Upwork](https://www.upwork.com/freelancers/~01a7a8b58043e6e6d9) | Direct Email: `sekmenwp@gmail.com`
+[✉️ Discuss Your Migration](mailto:sekmenwp@gmail.com) · [💼 Upwork Profile](https://www.upwork.com/freelancers/~01a7a8b58043e6e6d9) · [🔗 Main GitHub Profile](https://github.com/harunsekmen)
 
 ---
 
-## ⚡ The Financial Reality: Shopify Tax vs. Self-Hosted WooCommerce
+## 📸 Visual Previews & Storefront Demo
 
-On an e-commerce brand generating $50,000 / month:
-1. **Shopify Platform & App Tax**: $39/mo base + ~$280/mo in essential apps (Cart drawer, currency switcher, reviews, upsell) = **$3,800+ annually**.
-2. **Third-Party Payment Penalties**: If you use external payment gateways, Shopify levies an extra **0.5% - 2.0% transaction fee penalty** = **$6,000 - $12,000 lost per year**.
-3. **Vendor Lock-in**: Customizing checkout flows requires a $2,000/mo Shopify Plus plan.
-
-**DawnTwin** bridges this gap. It provides the exact minimalist, trusted aesthetic of Shopify's flagship **Dawn** theme while running on WooCommerce core with High-Performance Order Storage (HPOS).
-
----
-
-## 📸 Visual Previews & Operational Interface
-
-### 1. Shopify Dawn Product Page Fidelity
-Minimalist product presentation with native variant pill buttons, live stock status, and clean monochrome action hierarchy:
+### 1. Minimalist Product Page
+Clean typography, live stock availability, and intuitive variant selection matching modern e-commerce standards:
 
 ![Shopify Dawn Product Page Preview](docs/assets/shopify-dawn-storefront-hero.png)
 
-### 2. Native Slide-Out Drawer Cart & Free Shipping Meter
-Identical to Shopify's high-converting AJAX drawer. Dynamic shipping progress bar, inline item updates, and instant checkout triggers:
+### 2. Slide-Out AJAX Drawer Cart
+Shoppers can review their selections instantly with a built-in free shipping meter and fast checkout buttons:
 
 ![Shopify Dawn Drawer Cart Preview](docs/assets/shopify-dawn-cart-drawer.png)
 
 ---
 
-## 🛠️ Key Architectural Features
+## ⚡ The Problem It Solves
 
-- **Shopify Dawn Design System**: Clean typography, 1px borders, subtle hover transitions, and responsive mobile-first grids.
-- **Native Slide-Out AJAX Drawer Cart**: Zero-latency slide drawer with persistent session sync and free-shipping progress meter.
-- **Shopify-Style Variant Pills**: Converts WooCommerce's dated dropdown selects into sleek, clickable swatch pills.
-- **Zero Platform Commissions**: You keep 100% of your margins with direct gateway settlement (Stripe, PayPal, Mollie).
-- **Full HPOS Compatibility**: Built with native support for WooCommerce High-Performance Order Storage (`custom_order_tables`) and Cart/Checkout Blocks.
+Many brand founders and e-commerce operators love the clean, minimalist look and fast user flow of Shopify's flagship **Dawn** theme. However, running a store on proprietary platforms often introduces real friction:
+- **Recurring Monthly App Costs:** Essential store features—like slide-out cart drawers, currency selectors, and upsell modules—require monthly app subscriptions that add up quickly.
+- **Platform Transaction Penalties:** Using your preferred payment gateway often comes with an additional percentage fee on every sale.
+- **Platform Lock-In:** Customizing the checkout experience or integrating bespoke business workflows is restricted to enterprise tiers.
 
----
-
-## 📊 Cost & Performance Comparison
-
-| Feature / Metric | Shopify (Dawn Theme) | DawnTwin on WooCommerce |
-| :--- | :--- | :--- |
-| **Monthly Software Fee** | $39 - $399 / month | **$0 / month (Open Source)** |
-| **Platform Fee on Sales** | Up to +2.0% transaction cut | **0% (Direct Stripe/PayPal)** |
-| **Drawer Cart App Cost** | $15 - $29 / month app | **Included natively** |
-| **Checkout Customization** | Locked behind $2,000/mo Plus | **100% Open & Customizable** |
-| **Hosting & Data Ownership** | Closed proprietary cloud | **Your server, your database** |
+**DawnTwin** bridges this gap. It gives merchants the familiar, trusted shopping experience of a modern Shopify store while running on the flexible, self-hosted foundation of WooCommerce with High-Performance Order Storage (HPOS).
 
 ---
 
-## 🏗️ Repository Structure
+## 🛠️ Key Storefront Features
 
-```
-shopify-dawn-woocommerce-twin/
-├── .github/
-│   └── workflows/
-│       └── ci.yml               <-- GitHub Actions syntax and linting checks
-├── assets/
-│   ├── css/
-│   │   └── dawn-theme.css       <-- Dawn design tokens, drawer & pill styles
-│   └── js/
-│       └── dawn-theme.js        <-- Drawer open/close & variant pill event handlers
-├── docs/
-│   └── assets/                  <-- High-resolution storefront & UI previews
-├── includes/
-│   ├── class-admin.php          <-- WP Admin cost comparison & migration lead hook
-│   ├── class-drawer-cart.php    <-- Native slide-out AJAX cart drawer
-│   ├── class-engine.php         <-- Singleton lifecycle controller
-│   └── class-variant-pills.php  <-- Swatch pill converter
-├── templates/
-│   └── admin-dashboard.php      <-- WP Admin migration comparison table
-├── tests/
-│   ├── run-e2e-test.js          <-- Headless Chromium E2E verification suite
-│   └── store-simulation.html    <-- High-fidelity Dawn storefront showcase
-├── composer.json                <-- PSR-4 autoload mapping
-├── LICENSE                      <-- GPL-3.0 License
-├── README.md                    <-- Technical documentation with client migration hook
-└── shopify-dawn-woocommerce-twin.php <-- Main plugin entry point & metadata
-```
+- **Shopify Dawn Aesthetic:** Minimalist layouts, clean 1px borders, subtle transitions, and responsive mobile-first grids.
+- **Clickable Variant Pills:** Replaces dated select dropdowns with clean, clickable size, color, and option pills.
+- **Slide-Out AJAX Drawer:** Instant cart feedback with live quantity updates and an automated shipping progress bar.
+- **Direct Payment Gateways:** Connect directly to Stripe, PayPal, Apple Pay, Google Pay, or local processors with zero platform cuts.
+- **High-Performance Order Storage (HPOS):** Built with native support for WooCommerce modern order tables and blocks.
+- **Full Data Ownership:** Your customer records, order history, and product data remain completely under your control on your own server.
 
 ---
 
-## 🧪 Automated Testing & Verification
+## 💼 Turnkey Store Builds & Shopify Migrations
 
-The repository includes an end-to-end headless browser test suite verifying the Dawn drawer animation, variant selection, and responsive layouts:
+Looking to migrate from Shopify to WooCommerce, or launch a new brand with a clean, modern shopping experience?
 
-```bash
-# Run Playwright E2E simulation suite
-node tests/run-e2e-test.js
-```
+- **Catalog & Order Migration:** Clean transfer of products, variations, customer accounts, and historical order data.
+- **Pixel-Perfect Storefront Setup:** Dawn-inspired design customized to your typography, photography, and brand palette.
+- **Direct Gateway Configuration:** Stripe, PayPal, Apple Pay, and local merchant account integrations.
+- **SEO & URL Preservation:** 301 redirects and URL mapping to protect your existing search engine rankings.
+
+📩 **Get in touch:** Email **[sekmenwp@gmail.com](mailto:sekmenwp@gmail.com)** with your store URL or project scope, or hire me on **[Upwork](https://www.upwork.com/freelancers/~01a7a8b58043e6e6d9)**.
 
 ---
 
-## 🚀 Installation & Quick Start
+## 🚀 Developer Setup & Local Testing
 
-### Option 1: Git Clone
-```bash
-cd wp-content/plugins/
-git clone https://github.com/harunsekmen/shopify-dawn-woocommerce-twin.git
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/harunsekmen/shopify-dawn-woocommerce-twin.git wp-content/plugins/shopify-dawn-woocommerce-twin
+   ```
 
-### Option 2: WP-CLI Activation
-```bash
-wp plugin activate shopify-dawn-woocommerce-twin
-```
+2. **Activate the plugin:**
+   ```bash
+   wp plugin activate shopify-dawn-woocommerce-twin
+   ```
+
+3. **Run local simulation tests:**
+   ```bash
+   node tests/run-e2e-test.js
+   ```
 
 ---
 
 ## 📄 License
 
-This project is open-source software licensed under the **GNU General Public License v3.0 or later (GPL-3.0-or-later)**.
+This open-source project is licensed under the **[GNU General Public License v3.0](LICENSE)**.
 
