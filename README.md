@@ -1,5 +1,7 @@
 # 🛍️ DawnTwin · Shopify-Style WooCommerce Storefront Engine
 
+[🇬🇧 English](README.md) · [🇹🇷 Türkçe](README.tr.md)
+
 [![WooCommerce HPOS Ready](https://img.shields.io/badge/WooCommerce-HPOS%20Ready-7f54b3.svg)](https://github.com/harunsekmen/shopify-dawn-woocommerce-twin)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://github.com/harunsekmen/shopify-dawn-woocommerce-twin/blob/main/LICENSE)
 [![Zero Platform Fees](https://img.shields.io/badge/Platform%20Fees-0%25-brightgreen.svg)](https://github.com/harunsekmen/shopify-dawn-woocommerce-twin)
